@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="core_task_delete">Удалить</string>
+    <string name="core_task_complete_task_title">Завершить</string>
+    <string name="core_task_open_task_title">Открыть</string>
+</resources>

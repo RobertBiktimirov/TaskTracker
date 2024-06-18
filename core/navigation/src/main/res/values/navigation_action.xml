@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="action_global_edit_task_navigation" type="id" tools:ignore="ResourceName" />
+    <item name="action_global_add_task_navigation" type="id" tools:ignore="ResourceName" />
+    <item name="action_global_main_navigation" type="id" tools:ignore="ResourceName" />
+    <item name="action_global_calendar_navigation" type="id" tools:ignore="ResourceName" />
+</resources>

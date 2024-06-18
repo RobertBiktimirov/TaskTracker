@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <EditText
+            android:id="@+id/title_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/task_item_bg"
+            android:gravity="top"
+            android:hint="@string/feature_edittask_title_no_text_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="24dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/grey_text"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="fpejpjfwep" />
+
+
+        <EditText
+            android:id="@+id/desk_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/task_item_bg"
+            android:gravity="top"
+            android:hint="@string/feature_edittask_description_no_text_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="24dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/grey_text"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_task"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subtasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desk_task"
+            tools:itemCount="2"
+            tools:listitem="@layout/add_subtasks_item"
+            tools:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/title_task"
+            app:layout_constraintStart_toStartOf="@id/title_task"
+            app:layout_constraintTop_toBottomOf="@id/subtasks">
+
+            <TextView
+                android:id="@+id/desc_field_visible_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/task_item_bg"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="@string/feature_edittask_description_no_text_hint"
+                android:textColor="@color/grey_text" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                tools:text="6" />
+
+            <ImageView
+                android:id="@+id/sutbasks_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="32dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/baseline_checklist_rtl_24" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/add_task_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_send_task"
+                android:padding="16dp"
+                android:src="@drawable/baseline_send_24" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

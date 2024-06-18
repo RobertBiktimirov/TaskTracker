@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" tools:ignore="ResourceName">Hello blank fragment</string>
+    <string name="feature_main_progress_title">Выполнено задач сегодня</string>
+    <string name="feature_main_progress_value">%d %</string>
+    <string name="feature_main_projects_null">Нет проектов</string>
+    <string name="feature_main_delete_task">Удалить</string>
+    <string name="feature_main_complete_task">Завершить</string>
+</resources>

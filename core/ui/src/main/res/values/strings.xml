@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="my_tasks_title" tools:ignore="ResourceName">Мои задачи</string>
+    <string name="all_tasks_title" tools:ignore="ResourceName">Всего задач</string>
+    <string name="done_tasks_title" tools:ignore="ResourceName">Выполнено</string>
+</resources>

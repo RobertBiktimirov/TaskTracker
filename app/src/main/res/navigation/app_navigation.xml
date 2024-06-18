@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/feature_main_navigation">
+
+    <action
+        android:id="@+id/action_global_edit_task_navigation"
+        app:destination="@id/feature_edittask_navigation"
+        app:enterAnim="@anim/slide_in"
+        app:exitAnim="@anim/slide_out"
+        app:popExitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in">
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+    </action>
+
+    <action
+        android:id="@+id/action_global_add_task_navigation"
+        app:destination="@id/feature_add_task_navigation" />
+
+    <action
+        android:id="@+id/action_global_calendar_navigation"
+        app:destination="@id/feature_calendar_navigation" />
+
+    <include app:graph="@navigation/feature_main_navigation" />
+    <include app:graph="@navigation/feature_edittask_navigation" />
+    <include app:graph="@navigation/feature_add_task_navigation" />
+    <include app:graph="@navigation/feature_calendar_navigation" />
+
+</navigation>

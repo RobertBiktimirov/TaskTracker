@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/calendar_item_bg"
+    android:backgroundTint="@color/background_task_item"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/day_card"
+    android:layout_marginEnd="16dp"
+    tools:ignore="ResourceName">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:textSize="20sp"
+        tools:text="Всего выполнено"
+        android:textStyle="bold"
+        android:textColor="#B2B3B3" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="16"
+        android:textColor="#B2B3B3" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonalNotes</string>
+    <string name="main_section">Главная</string>
+    <string name="add_section">Добавить</string>
+    <string name="calendar_section">Календарь</string>
+    <string name="settings_action">Настройки</string>
+    <string name="notification_description">Уведомления нужны для напоминалок</string>
+</resources>

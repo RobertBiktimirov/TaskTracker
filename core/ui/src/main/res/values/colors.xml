@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="background" tools:ignore="ResourceName">#151A22</color>
+    <color name="text_color" tools:ignore="ResourceName">#FFFFFF</color>
+    <color name="background_task_item" tools:ignore="ResourceName">#0D1017</color>
+    <color name="grey_text" tools:ignore="ResourceName">#6D7072</color>
+    <color name="primary_color" tools:ignore="ResourceName">#6750A4</color>
+    <color name="primary_color_10" tools:ignore="ResourceName">#336750A4</color>
+    <color name="red" tools:ignore="ResourceName">#EF1606</color>
+</resources>

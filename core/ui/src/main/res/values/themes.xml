@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Custom" parent="@android:style/Theme" tools:ignore="ResourceName">
+        <item name="android:calendarViewStyle">@style/Widget.CalendarView.Custom</item>
+    </style>
+
+    <style name="Widget.CalendarView.Custom" parent="android:Widget.CalendarView" tools:ignore="ResourceName">
+        <item name="android:focusedMonthDateColor">@color/primary_color</item>
+        <item name="android:weekNumberColor">@color/text_color</item>
+        <item name="android:unfocusedMonthDateColor">@color/grey_text</item>
+        <item name="android:weekDayTextAppearance">@style/expandedText</item>
+        <item name="android:dateTextAppearance">@style/expandedText</item>
+    </style>
+</resources>
