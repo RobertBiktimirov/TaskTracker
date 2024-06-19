@@ -23,8 +23,8 @@ enum class FilterType(val value: String) {
     TODAY("Сегодня"),
     OPEN("Открытые"),
     COMPLETED("Закрытые"),
-    WITH_DEADLINE("С дедлайном"),
-    NOT_WITH_DEADLINE("Бед дедлайна"),
+//    WITH_DEADLINE("С дедлайном"),
+//    NOT_WITH_DEADLINE("Бед дедлайна"),
     WITH_SUBTASK("С подзадачами"),
     NOT_WITH_SUBTASK("Без подзадач"),
 }

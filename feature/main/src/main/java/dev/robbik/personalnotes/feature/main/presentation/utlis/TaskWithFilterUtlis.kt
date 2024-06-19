@@ -18,8 +18,8 @@ fun List<TaskModel>.withFilterTask(filter: FilterModel): List<TaskModel> {
 
         OPEN -> filter { it.isCompleted.not() }
         COMPLETED -> filter { it.isCompleted }
-        WITH_DEADLINE -> filter { it.deadline != null }
-        NOT_WITH_DEADLINE -> filter { it.deadline == null }
+//        WITH_DEADLINE -> filter { it.deadline != null }
+//        NOT_WITH_DEADLINE -> filter { it.deadline == null }
         WITH_SUBTASK -> filter { it.subtasks.isNotEmpty() }
         NOT_WITH_SUBTASK -> filter { it.subtasks.isEmpty() }
     }
